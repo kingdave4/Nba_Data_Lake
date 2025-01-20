@@ -10,8 +10,8 @@ from watchtower import CloudWatchLogHandler
 load_dotenv()
 
 # AWS Configurations
-REGION = os.getenv("AWS_REGION")
-BUCKET_NAME = os.getenv("AWS_BUCKET_NAME")
+REGION = "us-east-1"
+BUCKET_NAME = "sports-analytics-data-lake_kingdave"
 GLUE_DATABASE_NAME = "glue_nba_data_lake"
 ATHENA_OUTPUT_LOCATION = f"s3://{BUCKET_NAME}/athena-results/"
 NBA_ENDPOINT = os.getenv("NBA_ENDPOINT")
