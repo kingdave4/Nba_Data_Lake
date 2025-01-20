@@ -37,7 +37,7 @@ logger.addHandler(cloudwatch_handler)
 def create_s3_bucket():
     """Create the S3 bucket."""
     try:
-        if REGION == "us-east-1":
+        if REGION == "us-east-1":  # create this if the region is us-east-1
             s3_client.create_bucket(Bucket=BUCKET_NAME)
         else:
             s3_client.create_bucket(
