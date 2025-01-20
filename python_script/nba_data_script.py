@@ -27,8 +27,7 @@ logger = logging.getLogger("NBADataPipeline")
 logger.setLevel(logging.INFO)
 
 cloudwatch_handler = CloudWatchLogHandler(
-    log_group="nba-data-lake-logs",
-    log_stream="nba-data-pipeline",
+    log_group="nba-data-lake-logs"
     boto3_client=boto3.client("logs", region_name=REGION),
 )
 logger.addHandler(cloudwatch_handler)
