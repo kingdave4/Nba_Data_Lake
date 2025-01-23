@@ -92,7 +92,7 @@ Creating Glue Table "nba_players"
 configuring athena for querrying
 
 
-**Github action code**
+### ** Github action code **
 
 ![image](https://github.com/user-attachments/assets/3f78aa9c-1865-46c2-81a9-556208ad9950)
 
