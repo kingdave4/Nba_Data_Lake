@@ -3,7 +3,7 @@
 Welcome to my 3rd project in the Devops Challenge.
 This project automates the process of collecting, storing, and analyzing NBA player data using AWS. It fetches data from the **Sportsdata.io API** and sets up a data lake in AWS for easy querying and analytics.
 
-I once again decided to add my own challenge to the challenge by automating the process with github action, and logging it with cloudwatch.
+I once again decided to add my own challenge to the project by automating the process with github action, and logging it with cloudwatch.
 
 ---
 
