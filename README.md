@@ -105,7 +105,9 @@ Once the pipeline is complete:
 
 
 S3 Bucket: Data is stored under the raw-data/ folder.
+
 AWS Glue: Manages the data schema.
+
 AWS Athena: Query the data using SQL.
 
 **Example Query (Athena):**
@@ -119,7 +121,9 @@ WHERE Position = 'SG';
 
 
 **🛡️ Error Tracking**
+
 CloudWatch Logs: Tracks all activities (e.g., S3 uploads, API calls).
+
 Logs can help troubleshoot errors like missing API keys or AWS setup issues.
 
 ![image](https://github.com/user-attachments/assets/25c72261-c951-467e-97ff-3154c559e08b)
