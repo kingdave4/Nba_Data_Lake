@@ -93,11 +93,12 @@ configuring athena for querrying
 
 
 ### ** Github action code **
+This code is setup so that whenever there is a push request to our repository, this code will run and it will automate the deployment of our script which will create all the resources.
 
 ![image](https://github.com/user-attachments/assets/3f78aa9c-1865-46c2-81a9-556208ad9950)
 
 
-### 📊 Results
+### 📊 Results of the github action
 Once the pipeline is complete:
 
 ![image](https://github.com/user-attachments/assets/8334da17-bbb4-437a-8b82-284b30d58615)
