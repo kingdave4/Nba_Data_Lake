@@ -56,7 +56,7 @@ S3: s3:CreateBucket, s3:PutObject, s3:DeleteBucket, s3:ListBucket Glue: glue:Cre
    git clone https://github.com/your-username/nba-data-lake-pipeline.git
    cd nba-data-lake-pipeline
 
-# Push your code to the main branch.
+## Breakdown of the project.
 This project is meant to run the python script automatically with all it's depencies in the github action which is located in the ".\github\workflows\deploy.yml"
 
 **GitHub Actions will:** 
