@@ -64,14 +64,16 @@ Set up AWS resources.
 run the python script "nba_data_script.py" which does the following:
 configuration and initialization for the AWS services.
 
-#### Configuraion
+### Configuraion
 
 ![image](https://github.com/user-attachments/assets/5b6e0431-653c-4a1d-9fed-1caf5ed98280)
 
 
 
-initialization
-![alt text](image-2.png)
+### initialization
+
+![image](https://github.com/user-attachments/assets/99324a96-27f0-400b-a6d3-11877eb4e259)
+
 
 Creation of the S3 bucket
 Cretion of the Glue Databse
@@ -83,25 +85,27 @@ configuring athena for querrying
 
 
 **Github action code**
-![alt text](image.png)
+
+![image](https://github.com/user-attachments/assets/3f78aa9c-1865-46c2-81a9-556208ad9950)
 
 
 ### 📊 Results
 Once the pipeline is complete:
-![alt text](image-3.png)
+
+![image](https://github.com/user-attachments/assets/8334da17-bbb4-437a-8b82-284b30d58615)
 
 
 S3 Bucket: Data is stored under the raw-data/ folder.
 AWS Glue: Manages the data schema.
 AWS Athena: Query the data using SQL.
 
-
 **Example Query (Athena):**
 
 SELECT FirstName, LastName, Position, Team
 FROM nba_players
 WHERE Position = 'SG';
-![alt text](image-5.png)
+
+![image](https://github.com/user-attachments/assets/164e6c1e-f5f8-4f30-8816-7572e2849ff2)
 
 
 
@@ -109,7 +113,8 @@ WHERE Position = 'SG';
 CloudWatch Logs: Tracks all activities (e.g., S3 uploads, API calls).
 Logs can help troubleshoot errors like missing API keys or AWS setup issues.
 
-![alt text](image-6.png)
+![image](https://github.com/user-attachments/assets/25c72261-c951-467e-97ff-3154c559e08b)
+
 
 
 
