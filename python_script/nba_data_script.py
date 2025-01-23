@@ -10,7 +10,7 @@ load_dotenv()
 
 # AWS configurations
 region = "us-east-1"  # Replace with your preferred AWS region
-bucket_name = "sports-analytics-data-lake-2144"  # Change to a unique S3 bucket name
+bucket_name = "sports-analytics-data-lake-421"  # Change to a unique S3 bucket name
 glue_database_name = "glue_nba_data_lake"
 athena_output_location = f"s3://{bucket_name}/athena-results/"
 
@@ -24,16 +24,25 @@ glue_client = boto3.client("glue", region_name=region)
 athena_client = boto3.client("athena", region_name=region)
 logs_client = boto3.client("logs", region_name=region)
 
-# CloudWatch log group configurations
+# CloudWatch log group and stream configurations
 log_group_name = "NBAAnalyticsLogGroup"
+log_stream_name = "NBAAnalyticsLogStream"
 
 def initialize_cloudwatch_logging():
-    """Set up CloudWatch log group."""
+    """Set up CloudWatch log group and stream."""
     try:
         # Create log group if it doesn't exist
         logs_client.create_log_group(logGroupName=log_group_name)
     except logs_client.exceptions.ResourceAlreadyExistsException:
         pass  # Log group already exists
+
+    try:
+        # Create log stream if it doesn't exist
+        logs_client.create_log_stream(
+            logGroupName=log_group_name, logStreamName=log_stream_name
+        )
+    except logs_client.exceptions.ResourceAlreadyExistsException:
+        pass  # Log stream already exists
 
 def log_to_cloudwatch(message):
     """Log a message to CloudWatch."""
@@ -41,6 +50,7 @@ def log_to_cloudwatch(message):
         timestamp = int(time.time() * 1000)  # Current timestamp in milliseconds
         logs_client.put_log_events(
             logGroupName=log_group_name,
+            logStreamName=log_stream_name,
             logEvents=[{"timestamp": timestamp, "message": message}],
         )
     except Exception as e:
