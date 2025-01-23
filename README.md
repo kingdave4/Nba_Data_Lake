@@ -75,12 +75,20 @@ configuration and initialization for the AWS services.
 ![image](https://github.com/user-attachments/assets/99324a96-27f0-400b-a6d3-11877eb4e259)
 
 
+### Order of the python code execution
+
 Creation of the S3 bucket
+
 Cretion of the Glue Databse
+
 Fetching the NBA data.
+
 Convert to Json format
+
 uploading data to s3
+
 Creating Glue Table "nba_players"
+
 configuring athena for querrying
 
 
