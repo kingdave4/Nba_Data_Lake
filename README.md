@@ -1,4 +1,4 @@
-# NBA Data Lake Pipeline
+![image](https://github.com/user-attachments/assets/7a564250-2fbd-4293-a5c5-56d69b841bdb)# NBA Data Lake Pipeline
 
 Welcome to my 3rd project in the Devops Challenge.
 This project automates the process of collecting, storing, and analyzing NBA player data using AWS. It fetches data from the **Sportsdata.io API** and sets up a data lake in AWS for easy querying and analytics.
@@ -77,25 +77,23 @@ configuration and initialization for the AWS services.
 
 #### Order of the python code execution
 
-Creation of the S3 bucket
 
-Cretion of the Glue Databse
+1. **Creation of the S3 bucket.
+2. **Cretion of the Glue Databset.
+3. **Fetching the NBA data.
+4. **Convert to Json format.
+5. **uploading data to s3.
+6. **Creating Glue Table "nba_players.
+7. **Configuring athena for querrying.
 
-Fetching the NBA data.
-
-Convert to Json format
-
-uploading data to s3
-
-Creating Glue Table "nba_players"
-
-configuring athena for querrying
 
 
 ### ** Github action code **
 This code is setup so that whenever there is a push request to our repository, this code will run and it will automate the deployment of our script which will create all the resources.
 
 ![image](https://github.com/user-attachments/assets/3f78aa9c-1865-46c2-81a9-556208ad9950)
+
+
 
 
 ### 📊 Results of the github action
