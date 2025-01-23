@@ -65,7 +65,7 @@ run the python script "nba_data_script.py" which does the following:
 configuration and initialization for the AWS services.
 
 Configuraion
-![alt text](image-1.png)
+![image](https://github.com/user-attachments/assets/5b6e0431-653c-4a1d-9fed-1caf5ed98280)
 
 
 initialization
