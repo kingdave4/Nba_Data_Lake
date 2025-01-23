@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/7a564250-2fbd-4293-a5c5-56d69b841bdb)# NBA Data Lake Pipeline
+# NBA Data Lake Pipeline
 
 Welcome to my 3rd project in the Devops Challenge.
 This project automates the process of collecting, storing, and analyzing NBA player data using AWS. It fetches data from the **Sportsdata.io API** and sets up a data lake in AWS for easy querying and analytics.
@@ -56,7 +56,7 @@ S3: s3:CreateBucket, s3:PutObject, s3:DeleteBucket, s3:ListBucket Glue: glue:Cre
    git clone https://github.com/your-username/nba-data-lake-pipeline.git
    cd nba-data-lake-pipeline
 
-## Breakdown of the project.
+### Breakdown of the project.
 This project is meant to run the python script automatically with all it's depencies in the github action which is located in the ".\github\workflows\deploy.yml"
 
 **GitHub Actions will:** 
