@@ -26,7 +26,7 @@ I once again decided to add my own challenge to the project by automating the pr
 
 ---
 
-## 📝 Setup Instructions
+### 📝 Setup Instructions
 
 ### Step 1: Prerequisites
 - AWS account.
