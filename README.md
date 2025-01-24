@@ -141,7 +141,9 @@ Logs can help troubleshoot errors like missing API keys or AWS setup issues.
 **Future Enhancements:**
 
 🌟Automate data ingestion with AWS Lambda
+
 🌟Implement a data transformation layer with AWS Glue ETL
+
 🌟Add advanced analytics and visualizations (AWS QuickSight)
 
 
