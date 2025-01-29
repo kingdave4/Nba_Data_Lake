@@ -53,7 +53,7 @@ S3: s3:CreateBucket, s3:PutObject, s3:DeleteBucket, s3:ListBucket Glue: glue:Cre
 
 1. **Clone the Repo**
    ```bash
-   git clone https://github.com/your-username/nba-data-lake-pipeline.git
+   git clone https://github.com/kingdave4/Nba_Data_Lake.git
    cd nba-data-lake-pipeline
 
 ### Breakdown of the project.
